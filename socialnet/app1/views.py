@@ -8,6 +8,7 @@ from django.db.models import Q
 # Create your views here.
 def signup1(request):
     if request.method=='POST' and request.FILES['myfile']:
+        print('Vishal has made changes')
         firstname1=request.POST.get("firstname")
         lastname1=request.POST.get("lastname")
         email1=request.POST.get("email")
